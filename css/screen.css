@@ -60,15 +60,18 @@ a {
 }
 
 @media screen and (min-width: 320px) {
+  .week {
+    font-family: 'Carme', sans-serif;
+  }
   .week .day {
-    border: solid 1px gray;
+    border-bottom: solid 1px gray;
     display: inline-block;
     min-width: 320px;
   }
   .week .day .day-header {
     font-size: 28px;
     background-color: lightgray;
-    border-bottom: solid 1px gray;
+    padding: 5px;
   }
   .week .day .day-header .weekday {
     display: inline-block;
@@ -77,16 +80,22 @@ a {
     display: inline-block;
     float: right;
   }
-  .week .day .event-info {
+  .week .day .event {
+    padding: 5px;
+  }
+  .week .day .event .event-info {
     display: inline-block;
   }
-  .week .day .event-info .title {
+  .week .day .event .event-info .title {
     font-size: 24px;
   }
-  .week .day .event-info .tag {
+  .week .day .event .event-info .tag {
     font-size: 22px;
   }
-  .week .day .event-info .event-time {
+  .week .day .event .event-info h3, .week .day .event .event-info h4, .week .day .event .event-info h5, .week .day .event .event-info p {
+    margin-bottom: 3px;
+  }
+  .week .day .event .event-time {
     display: inline-block;
     float: right;
   }
