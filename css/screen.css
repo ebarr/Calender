@@ -55,47 +55,71 @@ table {
   background-position: 0 0;
 }
 
+.calender {
+  font-family: 'Carme', sans-serif;
+}
+.calender h1 {
+  font-size: 30px;
+  padding: 10px;
+}
+
 a {
   color: #800000;
 }
 
-@media screen and (min-width: 320px) {
-  .week {
-    font-family: 'Carme', sans-serif;
+.calender {
+  display: table;
+}
+.calender .week .day {
+  display: table-cell;
+  width: 90px;
+  height: 90px;
+  border: solid 1px black;
+}
+.calender .week .day .event-info {
+  display: none;
+}
+.calender .week .day .date {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .calender .week {
+    display: inline-block;
   }
-  .week .day {
+  .calender .week .day {
     border-bottom: solid 1px gray;
     display: inline-block;
     min-width: 320px;
   }
-  .week .day .day-header {
+  .calender .week .day .day-header {
     font-size: 28px;
     background-color: lightgray;
     padding: 5px;
   }
-  .week .day .day-header .weekday {
+  .calender .week .day .day-header .weekday {
     display: inline-block;
   }
-  .week .day .day-header .date {
+  .calender .week .day .day-header .date {
     display: inline-block;
     float: right;
   }
-  .week .day .event {
+  .calender .week .day .event {
     padding: 5px;
   }
-  .week .day .event .event-info {
+  .calender .week .day .event .event-info {
     display: inline-block;
   }
-  .week .day .event .event-info .title {
+  .calender .week .day .event .event-info .title {
     font-size: 24px;
   }
-  .week .day .event .event-info .tag {
+  .calender .week .day .event .event-info .tag {
     font-size: 22px;
   }
-  .week .day .event .event-info h3, .week .day .event .event-info h4, .week .day .event .event-info h5, .week .day .event .event-info p {
+  .calender .week .day .event .event-info h3, .calender .week .day .event .event-info h4, .calender .week .day .event .event-info h5, .calender .week .day .event .event-info p {
     margin-bottom: 3px;
   }
-  .week .day .event .event-time {
+  .calender .week .day .event .event-time {
     display: inline-block;
     float: right;
   }

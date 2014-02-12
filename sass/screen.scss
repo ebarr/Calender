@@ -14,6 +14,14 @@
     max-width: 960px;
 }
 
+%font {
+  font-family: 'Carme', sans-serif;
+  h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+}
+
 // Global tags
 
 body {
@@ -24,9 +32,33 @@ a {
     color: #800000;
 }
 
-@media screen and (min-width: 320px) {
+.calender {
+  display: table;
+  @extend %font;
   .week {
-    font-family: 'Carme', sans-serif;
+  .day {
+    display: table-cell;
+    width: 90px;
+    height: 90px;
+    border: solid 1px black;
+    .event-info {
+      display: none;
+    }
+    .date {
+      display: none;
+    }
+  }
+}
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+  .calender {
+  .week {
+    @extend %font;
+    display: inline-block;
     .day {
       border-bottom: solid 1px gray;
       display: inline-block;
@@ -67,6 +99,7 @@ a {
 
     }
   }
+}
 }
 
 
