@@ -28,10 +28,10 @@ a {
   .week {
     font-family: 'Carme', sans-serif;
     .day {
-      border-bottom: solid 1px gray;
-      display: inline-block;
+      // border-bottom: solid 1px gray;
+      display: block;
       min-width: 320px;
-      .day-header{
+      .day-header {
         font-size: 28px;
         background-color: lightgray;
         // border-bottom: solid 1px gray;
@@ -46,6 +46,7 @@ a {
         }
         .event {
           padding: 5px;
+          border-bottom: 2px solid #ccc;
           .event-info {
             display: inline-block;
             .title {
@@ -61,6 +62,9 @@ a {
             .event-time {
               display: inline-block;
               float: right;
+              text-align: right;
+
+
             }
 
          }

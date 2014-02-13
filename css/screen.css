@@ -64,8 +64,7 @@ a {
     font-family: 'Carme', sans-serif;
   }
   .week .day {
-    border-bottom: solid 1px gray;
-    display: inline-block;
+    display: block;
     min-width: 320px;
   }
   .week .day .day-header {
@@ -82,6 +81,7 @@ a {
   }
   .week .day .event {
     padding: 5px;
+    border-bottom: 2px solid #ccc;
   }
   .week .day .event .event-info {
     display: inline-block;
@@ -98,5 +98,6 @@ a {
   .week .day .event .event-time {
     display: inline-block;
     float: right;
+    text-align: right;
   }
 }
