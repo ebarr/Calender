@@ -82,6 +82,7 @@ a {
   }
   .week .day .event {
     padding: 5px;
+    border-bottom: 1px solid #ccc;
   }
   .week .day .event .event-info {
     display: inline-block;

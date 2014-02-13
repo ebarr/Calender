@@ -34,7 +34,6 @@ a {
       .day-header{
         font-size: 28px;
         background-color: lightgray;
-        // border-bottom: solid 1px gray;
         padding: 5px;
         .weekday {
           display: inline-block;
@@ -46,6 +45,7 @@ a {
         }
         .event {
           padding: 5px;
+          border-bottom: 1px solid #ccc;
           .event-info {
             display: inline-block;
             .title {
@@ -57,11 +57,13 @@ a {
             h3, h4, h5, p {
               margin-bottom: 3px;
             }
+
           }
-            .event-time {
-              display: inline-block;
-              float: right;
-            }
+
+          .event-time {
+            display: inline-block;
+            float: right;
+          }
 
          }
 
