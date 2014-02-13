@@ -67,14 +67,29 @@ a {
   color: #800000;
 }
 
+.three {
+  background-color: lightgray;
+}
+
 .calender {
   display: table;
+}
+.calender .week .day-name {
+  display: table-cell;
+  text-align: center;
+  height: 30px;
+  width: 90px;
+  border: solid 1px black;
+  padding-top: 5px;
 }
 .calender .week .day {
   display: table-cell;
   width: 90px;
   height: 90px;
   border: solid 1px black;
+}
+.calender .week .day p {
+  float: right;
 }
 .calender .week .day .event-info {
   display: none;
@@ -87,10 +102,16 @@ a {
   .calender .week {
     display: inline-block;
   }
+  .calender .week .day-name {
+    display: none;
+  }
   .calender .week .day {
     border-bottom: solid 1px gray;
     display: inline-block;
     min-width: 320px;
+  }
+  .calender .week .day p {
+    display: none;
   }
   .calender .week .day .day-header {
     font-size: 28px;

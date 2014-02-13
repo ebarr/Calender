@@ -32,23 +32,37 @@ a {
     color: #800000;
 }
 
+.three {
+      background-color: lightgray;
+    }
 .calender {
   display: table;
   @extend %font;
   .week {
-  .day {
-    display: table-cell;
-    width: 90px;
-    height: 90px;
-    border: solid 1px black;
-    .event-info {
-      display: none;
+    .day-name {
+      display: table-cell;
+      text-align: center;
+      height: 30px;
+      width: 90px;
+      border: solid 1px black;
+      padding-top: 5px;
     }
-    .date {
-      display: none;
+    .day {
+      display: table-cell;
+      width: 90px;
+      height: 90px;
+      border: solid 1px black;
+      p {
+        float: right;
+      }
+      .event-info {
+        display: none;
+      }
+      .date {
+        display: none;
+      }
     }
   }
-}
 }
 
 
@@ -59,10 +73,16 @@ a {
   .week {
     @extend %font;
     display: inline-block;
+    .day-name {
+      display: none;
+    }
     .day {
       border-bottom: solid 1px gray;
       display: inline-block;
       min-width: 320px;
+      p{
+        display: none;
+      }
       .day-header{
         font-size: 28px;
         background-color: lightgray;
